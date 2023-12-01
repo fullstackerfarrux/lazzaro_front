@@ -8,7 +8,7 @@ const Slider = () => {
 
   useEffect(() => {
     async function get() {
-      await fetch("http://localhost:4001/banner/get", {
+      await fetch("https://api.lazzaroburger.uz/banner/get", {
         method: "GET",
       })
         .then((res) => res.json())

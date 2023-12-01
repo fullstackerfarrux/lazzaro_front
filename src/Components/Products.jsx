@@ -26,13 +26,13 @@ const Products = () => {
     dispatch(addUserId(id));
 
     async function get() {
-      await fetch("http://localhost:4001/products", {
+      await fetch("https://api.lazzaroburger.uz/products", {
         method: "GET",
       })
         .then((res) => res.json())
         .then((data) => setProducts(data.products));
 
-      await fetch("http://localhost:4001/categories", {
+      await fetch("https://api.lazzaroburger.uz/categories", {
         method: "GET",
       })
         .then((res) => res.json())

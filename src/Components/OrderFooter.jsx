@@ -10,7 +10,7 @@ const OrderFooter = ({ total, price }) => {
 
   useEffect(() => {
     async function get() {
-      await fetch("http://localhost:4001/delivery", {
+      await fetch("https://api.lazzaroburger.uz/delivery", {
         method: "GET",
       })
         .then((res) => res.json())
@@ -25,7 +25,7 @@ const OrderFooter = ({ total, price }) => {
     let kmSum = 2000;
 
     let location = await fetch(
-      `http://localhost:4001/user_location/${cart.user_id}`,
+      `https://api.lazzaroburger.uz/user_location/${cart.user_id}`,
       {
         method: "GET",
         headers: { "Content-Type": "application/json" },

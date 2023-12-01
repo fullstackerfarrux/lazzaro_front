@@ -72,7 +72,7 @@ const Payment = () => {
     tg.MainButton.show();
 
     async function get() {
-      await fetch("http://localhost:4001/get/order", {
+      await fetch("https://api.lazzaroburger.uz/get/order", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
@@ -86,7 +86,7 @@ const Payment = () => {
             : setFirstOrder(0)
         );
 
-      await fetch("http://localhost:4001/delivery", {
+      await fetch("https://api.lazzaroburger.uz/delivery", {
         method: "GET",
       })
         .then((res) => res.json())
@@ -97,7 +97,7 @@ const Payment = () => {
   }, []);
 
   const checkPromocode = async (promo) => {
-    await fetch("http://localhost:4001/promo/getforuse", {
+    await fetch("https://api.lazzaroburger.uz/promo/getforuse", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
@@ -125,7 +125,7 @@ const Payment = () => {
     let kmSum = 2000;
 
     let location = await fetch(
-      `http://localhost:4001/user_location/${cart.user_id}`,
+      `https://api.lazzaroburger.uz/user_location/${cart.user_id}`,
       {
         method: "GET",
         headers: { "Content-Type": "application/json" },
