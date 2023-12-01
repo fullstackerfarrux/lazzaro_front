@@ -92,7 +92,7 @@ const Products = () => {
                   <img
                     src={p.images[0]}
                     width={"100%"}
-                    alt="collagen"
+                    alt="lazzaro"
                     style={{
                       cursor: "pointer",
                       minWidth: 171,
