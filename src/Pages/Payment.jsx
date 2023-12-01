@@ -165,8 +165,8 @@ const Payment = () => {
     }
 
     let sCoords = {
-      latitude: 41.302626,
-      longitude: 69.279813,
+      latitude: 41.2978612,
+      longitude: 69.171551,
     };
 
     let dCoords = {
@@ -180,6 +180,7 @@ const Payment = () => {
   }
 
   getDeliveryPrice();
+  console.log(getDeliveryPrice());
 
   return (
     <>

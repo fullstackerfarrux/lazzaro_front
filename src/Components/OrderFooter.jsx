@@ -21,7 +21,7 @@ const OrderFooter = ({ total, price }) => {
   }, []);
 
   async function getDeliveryPrice() {
-    let startSum = 10000;
+    let startSum = delivery?.delivery_price;
     let kmSum = 2000;
 
     let location = await fetch(
@@ -80,6 +80,7 @@ const OrderFooter = ({ total, price }) => {
   }
 
   getDeliveryPrice();
+  console.log(getDeliveryPrice());
 
   return (
     <>
