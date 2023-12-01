@@ -80,7 +80,6 @@ const OrderFooter = ({ total, price }) => {
   }
 
   getDeliveryPrice();
-  console.log(getDeliveryPrice());
 
   return (
     <>

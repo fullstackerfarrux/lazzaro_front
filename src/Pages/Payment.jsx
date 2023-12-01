@@ -40,7 +40,7 @@ const Payment = () => {
       delivery: typePut,
       payment: typePayment,
       comment: comment,
-      promocode: findPromo.title !== undefined ? findPromo.title : "",
+      promocode: findPromo.title !== undefined ? findPromo.id : "",
     };
 
     tg.sendData(JSON.stringify(res));
@@ -180,7 +180,6 @@ const Payment = () => {
   }
 
   getDeliveryPrice();
-  console.log(getDeliveryPrice());
 
   return (
     <>
