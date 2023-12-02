@@ -28,7 +28,6 @@ const Slider = () => {
             key={index}
             width={350}
             height={140}
-            style={{ border: "1px solid black" }}
           />
         ))}
       </div>
