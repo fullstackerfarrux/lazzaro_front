@@ -32,7 +32,7 @@ const Products = () => {
         .then((res) => res.json())
         .then((data) => setProducts(data.products));
 
-      await fetch("https://api.lazzaroburger.uz/categories", {
+      await fetch("https://api.lazzaroburger.uz/categories/not", {
         method: "GET",
       })
         .then((res) => res.json())
